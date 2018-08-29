@@ -1,0 +1,5 @@
+com/yuceyi/app/HelloIoc.class
+com/yuceyi/app/HelloInstanceFactory.class
+com/yuceyi/app/HelloStaticFactory.class
+com/yuceyi/app/App.class
+com/yuceyi/app/SpringLifeCycle.class

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--
+    创建对象的第一种方式：利用无参构造器
+    id:唯一标识符
+    class:类的全类名
+      -->
+    <bean id="helloIoc" scope="prototype" class="com.yuceyi.app.HelloIoc" ></bean>
+    <!-- 别名属性  name：和bean的 id 属性对应 -->
+    <alias name="helloIoc" alias="helloIoc2"/>
+
+    <bean id="helloStaticFactory" factory-method="getInstances" class="com.yuceyi.app.HelloStaticFactory"></bean>
+
+    <bean id="instanceFactory" lazy-init="true" class="com.yuceyi.app.HelloInstanceFactory"></bean> 
+    <bean id="instance" factory-bean="instanceFactory" factory-method="getInstance"></bean> 
+
+    <bean id="springLifeCycle" init-method="init" destroy-method="destroy" class="com.yuceyi.app.SpringLifeCycle"></bean>
+
+</beans>
+
