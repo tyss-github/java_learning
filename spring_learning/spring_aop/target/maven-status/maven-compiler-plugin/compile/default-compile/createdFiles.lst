@@ -1,0 +1,6 @@
+com/yuceyi/aop/UserService.class
+com/yuceyi/aop/Transaction.class
+com/yuceyi/aop/App.class
+com/yuceyi/aop/User.class
+com/yuceyi/aop/UserServiceImpl.class
+com/yuceyi/aop/MyAspect.class
